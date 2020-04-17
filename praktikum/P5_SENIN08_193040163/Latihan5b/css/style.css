@@ -1,0 +1,22 @@
+body {
+  background-color: #578aff;
+  text-align: center;
+}
+table{
+  background-color: #24b3ff;
+  border : 2px solid Blue;
+  text-align : center;
+  font-size : 30px;
+}
+td{
+  padding : 30px;
+  text-align: center;
+}
+h3{
+  text-align : center;
+  font-size : 50px;
+  color: black;
+}
+tbody{
+  text-align: center;
+}
