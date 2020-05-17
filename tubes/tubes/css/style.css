@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #578aff;
   text-align: center;
 }
@@ -19,3 +19,11 @@ h3{
   background-color: white;
   margin: 0px auto 0px auto
 }
+
+html{
+  background: url(../assets/bg/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
