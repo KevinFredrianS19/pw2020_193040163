@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2020 at 03:08 PM
+-- Generation Time: May 17, 2020 at 11:30 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -42,7 +42,6 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `cover`, `judul_buku`, `penulis`, `tema`, `harga`) VALUES
-(1, 'NW.jpg', 'NORWEGIAN WOOD', 'MURAKAMI', 'Motifasi pengalaman hidup', 'Rp. 75.000'),
 (2, 'rk.jpg', 'Rumah Kaca', 'Pramoedya Ananta Toer	', 'Pengarsipan Yang Rapi	', 'Rp.35.000\r\n'),
 (3, 'km.jpg', 'Komet Minor	', 'Tere Liye	', 'Perjalanan', 'Rp.77.000\r\n'),
 (4, 'lk.jpg', 'Luka Kata	', 'Chandra Malik	', 'Cinta', 'Rp.82.000\r\n'),
@@ -51,7 +50,8 @@ INSERT INTO `buku` (`id`, `cover`, `judul_buku`, `penulis`, `tema`, `harga`) VAL
 (7, 'CM.jpg', '5 CM', 'Donny Dhirgantoro	', 'Persahabatan', 'Rp.50.000'),
 (8, '5NM.jpg', '5 Negeri Menara', 'Ahmad Fuadi	', 'Pokok Permasalahan	', 'Rp.78.900'),
 (9, 'LP.jpg', 'Laskar Pelangi', 'Andrea Hirata	', 'Pendidikan', 'Rp.69.000'),
-(10, '88.jpg', '#88 Love Life', 'Dinda Puspitasari', 'Cinta', 'Rp.88.000');
+(10, '88.jpg', '#88 Love Life', 'Dinda Puspitasari', 'Cinta', 'Rp.88.000'),
+(12, 'NW.jpg', 'Norwegian Wood', 'Haruki Murakami', 'Pengalaman Hidup Melawan Penyakit', 'Rp. 75.000');
 
 -- --------------------------------------------------------
 
@@ -72,7 +72,10 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
 (3, 'asus', '$2y$10$P2MJxbiwmL2RXYO91nxt1OOMbBOF9nwC1q1bHdjLSGGKEEg7/TOMy'),
 (4, 'kevin', '$2y$10$FrACr9bspdRqAXgAN/hw0.WAuRpesqOj.OB3QqtRaJR02R3eVdrFC'),
-(5, 'akun1', '$2y$10$trJXJmb3FSW33TZx36swBOlm9h5geTO73vcVfKzPJ8L/p3/vrvBBO');
+(5, 'akun1', '$2y$10$trJXJmb3FSW33TZx36swBOlm9h5geTO73vcVfKzPJ8L/p3/vrvBBO'),
+(6, 'warna1', '$2y$10$odcSPAX.Mt73Cyzdz25z5etTVV1.tpqILBxSEmq71C/kqs1GPazRG'),
+(7, 'sampah10', '$2y$10$SVL7yb8wSc6/uAIKJvMrfuM8suMceTXL/wpL1RZbRE.KyIemk79HW'),
+(8, 'malam', '$2y$10$IPfQr5BsQS/IQhHZuAe8l.IxIZVrVYqtRs.ymNAH6UlP8GYSEFyZu');
 
 --
 -- Indexes for dumped tables
@@ -98,13 +101,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
