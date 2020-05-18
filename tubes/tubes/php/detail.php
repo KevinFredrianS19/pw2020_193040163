@@ -22,25 +22,37 @@ $buku = query("SELECT * FROM buku WHERE id = $id")[0];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    html {
+      background: url(../assets/bg/1.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
+  <a href="../index.php" class="back btn waves-effect waves-light" style="margin-left:1500px; margin-top:20px">Kembali</a>
   <div>
-    <h3 align="center">BOOK INSPIRATION</h3>
-    <div>
-      <img width="100px" src="../assets/img/<?= $buku['cover']; ?>">
+    <h3 align="center" class="mb-5" style="margin-bottom: 50px;"> <b>BOOK INSPIRATION</b></h3>
+    <div class="row mt-5" style="margin-bottom: 70px;">
+      <div class="col s12 center">
+        <img class="center responsive-img" style="min-height: 400px; max-height: 400px; margin: auto; vertical-align:middle;" src="../assets/img/<?= $buku['cover']; ?>">
+      </div>
     </div>
-    <div class="isi">
-      <p><?= $buku['judul_buku']; ?></p>
-      <p><?= $buku["penulis"]; ?></p>
-      <p><?= $buku["tema"]; ?></p>
-      <p><?= $buku["harga"]; ?></p>
+    <div class="isi align-cemter center" style="margin-bottom: 30px">
+      <h3><?= $buku['judul_buku']; ?></h3>
+      <h3><?= $buku["penulis"]; ?></h3>
+      <h3><?= $buku["tema"]; ?></h3>
+      <h3><?= $buku["harga"]; ?></h3>
     </div>
-    <div class="clear"></div>
-
-    <button class="back"><a href="../assets/img/">Kembali</a></button>
   </div>
-
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
