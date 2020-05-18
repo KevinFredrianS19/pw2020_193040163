@@ -147,12 +147,12 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-  <?php if (isset($error)) : ?>
-    <p style="color : red; font-style : italic;">Username atau Password salah</p>
-  <?php endif; ?>
   <div class="box">
     <form action="" method="post">
       <h1>Login</h1>
+      <?php if (isset($error)) : ?>
+        <h2 style="color : red; font-style : italic; margin: auto;">Username atau Password salah</h2>
+      <?php endif; ?>
       <input type="text" name="username" placeholder="Username">
       <input type="password" name="password" placeholder="Password">
       <input type="submit" name="submit" value="Login">
